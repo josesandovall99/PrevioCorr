@@ -4,6 +4,8 @@
  */
 package co.edu.udes.taller1p2;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author JOSE SANDOVAL
@@ -15,6 +17,7 @@ public class Punto8 {
 
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 12; j++) {
+                horas[j][i]=Integer.parseInt(JOptionPane.showInputDialog(null, "digite horas de mes" + (j+1) + " y asignatura" + (i+1)));
                 System.out.print("(" + horas[j][i] + ")");
             }
             System.out.println();
